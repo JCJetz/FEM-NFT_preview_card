@@ -1,6 +1,6 @@
 :root {
-    --very-dark-blu:               hsl(217, 54%, 11%);
-    --light-very-dark-blu:         hsl(216, 58%, 16%);
+    --very-dark-blue:               hsl(217, 54%, 11%);
+    --light-very-dark-blue:         hsl(216, 58%, 16%);
     --indigo-dye:                  hsl(215, 32%, 27%);  /* hsl(215, 51%, 70%);rayita separador*/
     --blue-yonder:                 hsl(216, 38%, 55%);
     --cyan:                        hsl(178, 100%, 50%);
@@ -18,19 +18,19 @@ html {
     font-family: "Outfit" sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
+a { text-decoration: none; }
 
 body {
-    background: var(--very-dark-blu);
+    background: var(--very-dark-blue);
     min-height: 100vh; /*Lo centra*/
     padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+    
+
+
 
 .card {
     background: var(--light-very-dark-blue);
@@ -41,67 +41,56 @@ body {
                 0px 40px 30px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card_img {
-        position: relative;
-        border-radius: 8px;
-        overflow: hidden;
-        cursor: pointer;
+.card_product-img {
 
-
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-
-
-.card_img::after {
+.card_product-img::after {
+    --cyan: hsl(178, 100%, 50%, 0.5);
     content: url(./images/icon-view.svg);
+    background: var(--cyan);
     position: absolute;
     inset: 0;
-    display: flex;
+    display:           flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     opacity: 0;
-  /*  transition: all 0.25s ease;  */
+    transition: all 0.23s ease; 
 }
 
-.whith_effect::after {
-
-    background: var(--cyan);
-    opacity: 0;
-
-}
+.card_product-img:hover::after {  opacity: 1; }
 
 
-.card_img:hover::after  {  opacity: 1; }
-
-.whith_effect:hover::after  {  opacity: .2; }
-
-.card_img img {
+.card_product-img img {
     width: 100%;
     display: block;
 }
 
 .card_body {
-
     padding: 23px  0;
     border-bottom: 1px solid var(--indigo-dye); /*rayita separador*/
     margin-bottom: 15px; /*rayita separador*/
 }
 
-.card_product {
- color: var(--white);
- font-size: 22px;
- font-weight: 500;
- margin-bottom: 15px;
-}
+.card_title {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+   }
+   
+   .card_title:hover { color: var(--cyan); }
 
-.card_product:hover { color: var(--cyan); }
-
-.card_text {
+   .card_text {
     font-family: Outfit;
     color:  var(--blue-yonder);
     font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 23;
+    line-height: 1.5;
+    margin-bottom: 23px;
 
 }
 
@@ -118,53 +107,40 @@ body {
     display: flex ;
     align-items: center;
     font-weight:500;
-    margin-top: 20px;
 }
 
-
 .card_price {  color: var(--cyan); }
-
+    
 .card_icon { margin-right: 6px; }
 
 .card_clock { color: var(--blue-yonder);}
 
-.footer {
+
+.card_footer {
     display: flex;
     align-items: center;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 
-.card_author {
-
-    width: 33px;
-    height: 33px;
+.card_author-img {
+    
+    width: 34px;
+    height: 34px;
     border: 2px solid var(--white);
     border-radius: 50px;
     margin-right: 15px;
 }
 
-.card_author_name {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card_author-name {
 
-
-height: 20px;
-left: 0%;
-right: 55.25%;
-top: calc(50% - 20px/2);
-
-/* Caption */
-
-font-family: Outfit;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-color: rgba(139, 172, 217, 1);    
+    color: var(--blue-yonder);
+    font-weight: 500;
 }
 
- .myname {
+.card_author-name a {
     color: var(--white);
-
+    font-weight: 400;
 }
+
+.card_author-name a:hover { color: var(--cyan); }
+
