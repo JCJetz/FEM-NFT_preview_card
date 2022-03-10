@@ -15,8 +15,7 @@
 }
 
 html {
-    font-family: "Outfit" sans-serif;
-}
+    font-family: 'Outfit', sans-serif;}
 
 a { text-decoration: none; }
 
@@ -27,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Outfit', sans-serif;
 }
     
 
@@ -81,6 +81,7 @@ body {
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 15px;
+
    }
    
    .card_title:hover { color: var(--cyan); }
