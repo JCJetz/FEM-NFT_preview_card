@@ -2,7 +2,7 @@
 
  Challenge [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). 
 
-This is my solution to the NFT preview card component challenge on Frontend Mentor
+This is my solution to the NFT preview card component challenge on Frontend Mentor  :D
 
  ### Screenshot
 
@@ -30,14 +30,11 @@ If you want some support on the challenge? [Join the Slack community](https://ww
 
 ### Useful resources
  
-- ⭐ [resource] Learn to code by playing games
-              (https://flexboxfroggy.com/#es)
+- ⭐ [Learn to code by playing games](https://flexboxfroggy.com/#es)
 
-- ⭐ [resource] How TO - Three Column Layout
-               (https://www.w3schools.com/howto/howto_css_three_columns.asp)
+- ⭐ [How TO - Three Column Layout](https://www.w3schools.com/howto/howto_css_three_columns.asp)
 
-- ⭐ [resource] What is :hover::after?
-              (https://stackoverflow.com/questions/70729611/what-is-hoverafter)
+- ⭐ [What is :hover::after?](https://stackoverflow.com/questions/70729611/what-is-hoverafter)
 
 
 ### Built with
